@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="javascript.js">
+    <script src="javascript.js"></script>
 </head>
 <body>
-    
+    <dl>
+        <h3>Var, let , const</h3>
+        <dt>Var: </dt>
+        <dd>It is a global variable where we can use anywhere i the program once we create it. <br> it will moevs to top of the stack means if we define anywhere in the program and we acces it before it assigned, it will gives as undefinied variable. <br> We can redefine it.</dd>
+        <button onclick="getvarexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="varexample"></p>
+
+        <dt>Let: </dt>
+        <dd>It is a block level variable where we can use within the block. <br> it will raise exception if you are accessing the variable before it is declared. <br> Reassignment possible.</dd>
+        <button onclick="getletexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="letexample"></p>
+
+        <dt>const: </dt>
+        <dd>It is a block level variable where we can use within the block. <br>It is not reassigned or redeclared <br> Once it is defined it cannot be changed.</dd>
+        <button onclick="getconstexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="constexample"></p>
+
+
+        <h3>String, Number, Boolean , Null, Undefinied</h3>
+        <dt>String: </dt>
+        <dd>I am combination of characters.</dd>
+        <button onclick="getstringexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="stringexample"></p>
+        <dt>Number: </dt>
+        <dd>A normal interger we can assign it to let var const also. it is depend on usage of the variable in code.</dd>
+        <button onclick="getnumberexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="numberexample"></p>
+        <dt>Boolean: </dt>
+        <dd>It will gives output as true of false 1 or 0 after analyzing the code.</dd>
+        <button onclick="getbooleanexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="booleanexample"></p>
+
+        <dt>Null: </dt>
+        <dd>If value is not definied yet we can define null value inplace of that.</dd>
+        <button onclick="getnullexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="nullexample"></p>
+
+        <dt>Undefined: </dt>
+        <dd>he variable value is undefined whenever it is access the value before it is assign.</dd>
+        <button onclick="getundefinedexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="undefinedexample"></p>
+
+        <h3>Operators</h3>
+        <dt>+ , - , * /, %, =, => ,< ,<=, ==</dt>
+        <dd>These are used to make calcluations or compare to values.</dd>
+        <button onclick="getoperatorsexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="operatorsexample"></p>
+
+        <h3>Strings and Template Literals</h3>
+        <dt>Strings and template literals</dt>
+        <dd>strings: collection of characters. <br> Template it is used to define multiple lines of text like paragraph</dd>
+        <button onclick="gettemplateexample()">Get example</button>
+        <dt>For example: </dt>
+        <p id="templateexample"></p>
+        
+        <h3>Alert, prompt,  console.log()</h3>
+        <dt>Alert</dt>
+        <dd>windows like a warning block in application it will raise at top center of the screen</dd>
+        <button onclick="getalertexample()">Alert me</button>
+        
+        <dt>Prompt</dt>
+        <dd>it is used to take the input of a value  like an input field</dd>
+        <button onclick="getpromptexample()">Prompt me</button>
+    </dl>
+
 </body>
 </html>
