@@ -69,7 +69,6 @@ function getoperatorsexample(){
     example += "<br> post decrement two number: "+(a--);
     example += "<br> not equal two number: "+(a!=b);
     document.getElementById("operatorsexample").innerHTML=example;
-
 }
 
 
