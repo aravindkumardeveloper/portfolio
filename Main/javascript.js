@@ -14,6 +14,13 @@ example +="<br>Now i am defined my value is: "+a;
 document.getElementById("letexample").innerHTML=example;
 }
 
+function getconstexample(){
+
+const pi=3.14;
+
+document.getElementById("constexample").innerHTML="I am constant"+pi;
+}
+
 function getstringexample(){
 let str="Aravind"
 document.getElementById("stringexample").innerHTML="I am using string to print my name. <br>My name is: "+str;

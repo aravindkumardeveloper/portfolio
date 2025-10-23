@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+        <dt>Functinos</dt>
+        <dd>It is used to perform an action and reflect the result</dd>
+        <Button onclick="functions()">For Example</Button>
+        <p id="functinoExample"></p>
+
+        <dt>Event</dt>
+        <dd>the event will detect itself and execute the function</dd>
+        <p id="message">You have not clicked the button yet.</p>
+        <Button onclick="event()">For Example</Button>
+        <p id="eventExample"></p>
+
+        <dt>Function Declaration</dt>
+        <dd>normal claling a function with it's name and geting result after executing function is  normal functio Declaration</dd>
+        <Button onclick="functiondeclaration()">For Example</Button>
+        <p id="functiondeclarationexample"></p>
+
+        <dt>Function Expression</dt>
+        <dd>Here the function will be placed within a assignment operator by the variable we can call the function with parameters.</dd>
+        <Button onclick="functiondexpression()">For Example</Button>
+        <p id="functionexpressionexample"></p>
+        
+        <dt>Arrow Function</dt>
+        <dd>It works like a function.<br> It is used for make code simple.</dd>
+        <Button onclick="arrowfunction()">For Example</Button>
+        <p id="arrowfunctionexample"></p>
+        <p>Add 5 and 10</p> <button onclick="add(5,10)">Add</button>
+        <p id="addexample"></p>
+
+        <dt>Parameter and Argument</dt>
+        <dd>Both are same we use this concept to pass values into the function to do some action with that argument.<br> In the above arrow functino example i used argument to calculate the two numbers</dd>
+        
+        <dt>Return Statement</dt>
+        <dd>This Statement will give response fron the function as Statement</dd>        
+        <button onclick="checking()"> For example</button>
+        <p id="returnexample"></p>
+
+        <h3>Function scope and variable scope</h3>
+        <dt>Function Scope</dt>
+        <dd>The variable which is defined outside of the method  will be considered as functino scope and it can be used anywhere within the file</dd>
+    
+        <dt>Variable scope</dt>
+        <dd>The variable which is defined within the block like if, method, etc that will work under that methos only if we try to access the variable it will throw an error </dd>
+        <button onclick="addcount()"> For example</button>
+        <p id="functionexample"></p>
+    </dl>
+
+    <script>
+        function functions(){
+            document.getElementById("functinoExample").innerHTML= "I am a function. <br> I can act which action do you want.";
+        }
+
+let clickCount = 10;
+
+
+function event() {
+    let  messageElement = document.getElementById('message');
+    clickCount++;
+    
+    messageElement += `You have clicked the button ${clickCount} times!`;
+    document.getElementById("eventExample").innerHTML=messageElement;
+}
+
+function functiondeclaration(){
+    document.getElementById("functiondeclarationexample").innerHTML="I am function delclaration which is define like normal function";
+}
+
+const functiondexpression = function(){
+    alert("I am function expression calling from html");
+};
+
+const arrowfunction =()=>{
+    document.getElementById("arrowfunctionexample").innerHTML="I am created with equal to and greater than.";
+}
+
+const add=(a,b)=>{
+    document.getElementById("addexample").innerHTML=a+b;
+}
+
+    function check(age){
+        if (age>18){
+            return "He/She is eligible for voting"
+        }
+        else{
+            return "He/She is not eligible for voting"
+        }
+    }
+    function checking(){
+document.getElementById("returnexample").innerHTML=check(19);
+    }
+    
+
+function addcount(){
+    document.getElementById("functionexample").innerHTML="I am adding 10 to function scope variable that is defined already. the sum is: "+(clickCount+10);
+}
+    </script>
+</body>
+</html>
