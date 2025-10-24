@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <dl>
+        <h3>Arrays</h3>
+        <dt>Arrays</dt>
+        <dd>Collection of elements with different data types <br>The array length is flexible.</dd>
+
+        <dt>Creating Array</dt>
+        <dd>This array contains collection of interger element we can add multiple data types in one array.</dd>
+        <button onclick="getcreatearray()">For Example</button>
+        <p id="getcreatearrayexample"></p>
+
+        <dt>Pushing Elements one by one in Array</dt>
+        <dd>Adding one by one element into the array by using push method in array</dd>
+        <button onclick="getpusharray()">For Example</button>
+        <p id="getpusharrayexample"></p>
+
+        <dt>Array methods</dt>
+        <dd>For this method i am taking previous defined array to work out on arrays methods</dd>
+        <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; flex-direction: row;">
+        <button onclick="getat()">At Example</button>
+        <p id="getatexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+        <button onclick="getconcat()">Concat Example</button>
+        <p id="getconcatexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getcopywithin()">Copywithin Example</button>
+                <p id="getwithinexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getevery()">every Example</button>
+                <p id="geteveryexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getfill()">fill Example</button>
+                <p id="getfillexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getfilter()">filter Example</button>
+                <p id="getfilterexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getfind()">find Example</button>
+                <p id="getfindexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getfindindex()">findindex Example</button>
+                <p id="getfindindexexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getfindindex()">findindex Example</button>
+                <p id="getfindindexexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getforeach()">foreach Example</button>
+                <p id="getforeachexample" style="margin-left: 20px;"></p>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getincludes()">includes Example</button>
+                <p id="getincludesexample" style="margin-left: 20px;"></p>
+            </div>
+
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getjoin()">join Example</button>
+                <p id="getjoinexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getjoin()">join Example</button>
+                <p id="getjoinexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getmap()">Map Example</button>
+                <p id="getmapexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getmap()">Map Example</button>
+                <p id="getmapexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getpop()">pop Example</button>
+                <p id="getpopexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getreduce()">Reduce Example</button>
+                <p id="getreduceexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getreverse()">reverse Example</button>
+                <p id="getreverseexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getshift()">Shift Example</button>
+                <p id="getshiftexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getunshift()">Unshift Example</button>
+                <p id="getunshiftexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getsome()">some Example</button>
+                <p id="getsomeexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getsort()">sort Example</button>
+                <p id="getsortexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getvalue()">Value Example</button>
+                <p id="getvlaueexample" style="margin-left: 20px;"></p>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <button onclick="getlength()">length Example</button>
+                <p id="getlengthexample" style="margin-left: 20px;"></p>
+            </div>
+
+        </div>
+        
+    </dl>
+
+
+    <script>
+        function getcreatearray(){
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getcreatearrayexample").innerHTML="Array of integer elements: "+marks;
+        }
+
+        function getpusharray(){
+            const ages=[];
+            var example="";
+            example ="Array is created <br>";
+            ages.push(30);
+            example +="One element is pushed into the array <br>";
+            ages.push(50);
+            example +="Another element is added into the array <br>";
+            document.getElementById("getpusharrayexample").innerHTML=example+"<br>"+ages;
+        }
+
+        function getat(){
+            const marks=[56,87,59,89,75,79];
+            let index=3;
+            document.getElementById("getatexample").innerHTML="Fetch an index value by using index at method and  index as parameter "+marks.at(index);
+        }
+
+        function getconcat(){
+            const marks=[56,87,59,89,75,79];
+            const addmark=[10,3,18,1,12,5];
+            let index=3;
+            document.getElementById("getconcatexample").innerHTML="Concat the data by using concat method and second array as parameter FROM 6TH INDEX ADMARKS ARRAY"+marks.concat(addmark);
+        }
+
+        function getcopywithin(){
+            const marks=[56,87,59,89,75,79];
+            const addmark=[10,3,18,1,12,5];
+            let index=3;
+            document.getElementById("getwithinexample").innerHTML="Concat the data by using concat method and second array as parameter"+addmark.copyWithin(2,4);
+        }
+
+        function getevery(){
+            const checkout= (currentValue)=> currentValue>60;   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("geteveryexample").innerHTML="Checking every student marks whether they cross 60 marks or not using checking condition and every method:: "+marks.every(checkout);
+        }
+        function getfill(){   
+            const marks =[56,87,59,89,75,79];
+            document.getElementById("getfillexample").innerHTML="Filling element as 35 as default value:: "+marks.fill(35,3);
+        }
+
+        function getfilter(){ 
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getfilterexample").innerHTML="Marks which cross 60: "+marks.filter((mark)=>mark>60);
+        }
+
+        function getfind(){ 
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getfindexample").innerHTML="First mark which cross 55 from the array: "+marks.find((mark)=>mark>55);
+        }
+
+        function getfindindex(){ 
+            const checkout= (currentValue)=> currentValue>60;   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getfindindexexample").innerHTML="First mark which cross 60 from the array index: "+marks.findIndex(checkout);
+        }
+
+        function getforeach(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getforeachexample").innerHTML="Every element will be printed in the console: "+marks.forEach(element => {console.log(element);});
+        }
+
+        function getincludes(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getincludesexample").innerHTML="It will tell that the element is present in the array or not: "+marks.includes(59);
+        }
+
+        function getjoin(){   
+            const marks=["Air","Water","Fire"];
+            document.getElementById("getjoinexample").innerHTML="concat by using join we can define synmbols in between spaces of a word: "+marks.join("@");
+        }
+
+        function getmap(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getmapexample").innerHTML="By using map we can define functino and modify and element in array adding 10 marks to every student marks the result is: "+marks.map(element=>element+10);
+        }
+
+        function getpop(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getpopexample").innerHTML="Remove last element from the array: "+marks.pop()+" No more"+marks;
+        }
+
+        function getreduce(){   
+            const marks=[56,87,59,89,75,79];
+            const initial=0;
+            document.getElementById("getreduceexample").innerHTML="Reduce the array to single element: "+marks.reduce((acc,currentValue)=>acc+currentValue,initial);
+        }
+
+        function getreverse(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getreverseexample").innerHTML="Reverse the array: "+marks.reverse();
+        }
+
+        function getshift(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getshiftexample").innerHTML="It will give the first element from array: "+marks.shift()+"  Once shift applied to any array the first element will be removed and rest of he elemnts will replace the array "+marks;
+        }
+
+        function getunshift(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getunshiftexample").innerHTML="It will give the length of array: "+marks.unshift(45,66)+"  Once unshift applied to any array the  element will be added to initial of array "+marks;
+        }
+
+        function getsome(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getsomeexample").innerHTML="if the condition satisfies even single element it will return true: "+marks.some((element)=>element%2==0);
+        }
+
+        function getsort(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getsortexample").innerHTML="sort the element in ascending order: "+marks.sort();
+        }
+
+        function getvalue(){   
+            const marks=[56,87,59,89,75,79];
+            const arr=marks.values();
+            for(const value of arr){
+                console.log(value);
+            }
+            document.getElementById("getvlaueexample").innerHTML="Prints Values of array in console: "+arr;
+        }
+
+        function getlength(){   
+            const marks=[56,87,59,89,75,79];
+            document.getElementById("getlengthexample").innerHTML="Length of array: "+marks.length;
+        }
+    </script>
+</body>
+</html>
